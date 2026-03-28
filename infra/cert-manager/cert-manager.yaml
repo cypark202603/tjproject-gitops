@@ -27,6 +27,10 @@ spec:
       kind: ReplicaSet
       jsonPointers:
         - /status
+    - group: apps
+      kind: StatefulSet
+      jsonPointers:
+        - /status
   syncPolicy:
     automated:
       prune: true
