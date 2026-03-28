@@ -15,8 +15,7 @@ spec:
       values: |
         loki:
           persistence:
-            enabled: true
-            size: 10Gi
+            enabled: false
         promtail:
           enabled: true
         grafana:
