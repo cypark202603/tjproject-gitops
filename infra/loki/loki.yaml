@@ -35,9 +35,9 @@ spec:
         - /status
     - group: apps
       kind: StatefulSet
-      jqPathExpressions:
-        - .spec.volumeClaimTemplates[]?.status
-        - .status
+      jsonPointers:
+        - /status
+        - /spec/volumeClaimTemplates/0/status
     - group: apps
       kind: DaemonSet
       jsonPointers:
